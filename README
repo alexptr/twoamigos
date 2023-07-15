@@ -1,0 +1,16 @@
+Scooby - client service
+Velma - server; exposes string SayHello(string) method 
+
+
+Velma container: 
+docker build -t velma .
+docker run -p 10000:10000 -it velma
+
+
+Scooby container: 
+docker build -t scooby .
+docker run -it scooby
+
+
+Creating user defined network: 
+https://www.tutorialworks.com/container-networking/
