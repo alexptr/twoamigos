@@ -5,6 +5,8 @@ Velma - server; exposes string SayHello(string) method
 Velma container: 
 docker build -t velma .
 docker run -p 10000:10000 -it velma
+or 
+docker run --rm --net <user def network name> --name velma -d velma 
 
 
 Scooby container: 
