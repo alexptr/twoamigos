@@ -10,6 +10,8 @@ docker run -p 10000:10000 -it velma
 Scooby container: 
 docker build -t scooby .
 docker run -it scooby
+or
+docker run --net <user def network name> -it scooby
 
 
 Creating user defined network: 

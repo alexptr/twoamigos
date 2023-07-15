@@ -60,7 +60,8 @@ func main() {
 
 func callVelma(callsCount int) {
 	for i := 0; i < callsCount; i++ {
-		resp, err := http.Get("http://172.17.0.2:10000/sayHello/Alex")
+		//resp, err := http.Get("http://172.17.0.2:10000/sayHello/Alex")
+		resp, err := http.Get("http://velma:10000/sayHello/Alex")
 
 		if err != nil {
 			log.Fatalln(err)
